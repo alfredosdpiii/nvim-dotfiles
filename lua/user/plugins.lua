@@ -64,6 +64,15 @@ return packer.startup(function(use)
   use "ap/vim-css-color"
   use "mattn/emmet-vim"
     use {'prettier/vim-prettier', run = 'yarn install' }
+    use {
+  'sudormrfbin/cheatsheet.nvim',
+
+  requires = {
+    {'nvim-telescope/telescope.nvim'},
+    {'nvim-lua/popup.nvim'},
+    {'nvim-lua/plenary.nvim'},
+  }
+}
 
   --no distractions mode
   use "junegunn/goyo.vim"
