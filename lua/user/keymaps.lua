@@ -100,3 +100,5 @@ keymap("n", "Y", "y$", opts)
 keymap("n", "<leader>A", ':lua require("harpoon.ui").add_file()<CR>', opts)
 keymap("n", "<C-e>", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 
+--undotree
+keymap("n", "<F5>", ":UndoTreeToggle<CR>", opts)
