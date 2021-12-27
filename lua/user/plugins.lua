@@ -63,6 +63,7 @@ return packer.startup(function(use)
   use "tpope/vim-eunuch"
   use "ap/vim-css-color"
   use "mattn/emmet-vim"
+    use {'prettier/vim-prettier', run = 'yarn install' }
 
   --no distractions mode
   use "junegunn/goyo.vim"
