@@ -73,6 +73,7 @@ return packer.startup(function(use)
     {'nvim-lua/plenary.nvim'},
   }
 }
+    use 'dbeniamine/cheat.sh-vim'
 
   --no distractions mode
   use "junegunn/goyo.vim"
