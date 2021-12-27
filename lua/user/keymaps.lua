@@ -80,7 +80,7 @@ keymap("n", ";", ":lua require'telescope.builtin'.buffers{}<CR>", opts)
 --find in current buffer
 keymap("n", "<leader>/", ":lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>", opts)
 --git files
-keymap("n", "<leader>GF", ":lua require'telescope.builtin'.git_files{}<CR>", opts)
+keymap("n", "<leader>op", ":lua require'telescope.builtin'.git_files{}<CR>", opts)
 --rip grep through dir
 keymap("n", "<leader>rg", ":lua require'telescope.builtin'.live_grep{}<CR>", opts)
 
@@ -102,3 +102,5 @@ keymap("n", "<C-e>", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 
 --undotree
 keymap("n", "<F5>", ":UndoTreeToggle<CR>", opts)
+
+-- keymap("n", "t<leader>", ":tabNext<CR>", opts)
