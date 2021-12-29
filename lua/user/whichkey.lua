@@ -127,6 +127,12 @@ local mappings = {
     },
   },
 
+  j = {
+    name = "Test",
+    f = { "<cmd>TestFile<cr>", "Test File"},
+    t = { "<cmd>TestNearest<cr>", "Test Nearest"},
+    s = { "<cmd>TestSuite<cr>", "Test Suite"},
+    },
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
