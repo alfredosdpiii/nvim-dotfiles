@@ -78,20 +78,20 @@ return packer.startup(function(use)
   --no distractions mode
   use "junegunn/goyo.vim"
     use "othree/javascript-libraries-syntax.vim"
-    use {
-  "ahmedkhalf/project.nvim",
-  config = function()
-    require("project_nvim").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-      require('telescope').load_extension('projects')
-    }
-  end
-}
+use {'pwntester/octo.nvim', config=function()
+  require"octo".setup()
+end}
 
+    --webdev shit
+    use "lukas-reineke/cmp-rg"
+    use "ray-x/cmp-treesitter"
+    use "tpope/vim-rails"
+    use "tpope/vim-endwise"
+    use "tpope/vim-rvm"
+    use "tpope/vim-dadbod"
+    use "tpope/vim-jdaddy"
 
-
+    use 'ggandor/lightspeed.nvim'
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
