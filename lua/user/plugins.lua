@@ -90,6 +90,8 @@ end}
     use "tpope/vim-rvm"
     use "tpope/vim-dadbod"
     use "tpope/vim-jdaddy"
+    use "vim-test/vim-test"
+    use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
 
     use 'ggandor/lightspeed.nvim'
 
