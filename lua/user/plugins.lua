@@ -92,6 +92,7 @@ end}
     use "tpope/vim-jdaddy"
     use "vim-test/vim-test"
     use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
+    use "preservim/tagbar"
 
     use 'ggandor/lightspeed.nvim'
 
