@@ -35,6 +35,8 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
+vim.g.gruvbox_baby_function_style = "bold"
+vim.g.background_color = "dark"
 vim.opt.shortmess:append "c"
 -- vim.o.background="dark"
 vim.o.foldenable = false
