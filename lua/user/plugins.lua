@@ -101,6 +101,7 @@ end}
   -- use "lunarvim/darkplus.nvim"
   -- use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
   use "morhetz/gruvbox"
+  use "luisiacc/gruvbox-baby"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
