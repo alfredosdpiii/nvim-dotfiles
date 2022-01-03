@@ -154,7 +154,9 @@ end}
     use 'tpope/vim-bundler'
     use 'tpope/vim-repeat'
     use 'tpope/vim-dispatch'
-    use 'tpope/vim-dispatch'
+    use 'nvim-telescope/telescope-fzy-native.nvim'
+    use 'nvim-telescope/telescope-project.nvim'
+    use 'nvim-telescope/telescope-file-browser.nvim'
 --end of experimental plugs
 
   -- Telescope

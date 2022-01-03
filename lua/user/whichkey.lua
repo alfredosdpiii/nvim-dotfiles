@@ -103,6 +103,11 @@ local mappings = {
     S = { "<cmd>PackerStatus<cr>", "Status" },
     u = { "<cmd>PackerUpdate<cr>", "Update" },
   },
+  -- v = {
+  --   name = "CustomScope",
+  --   r = {"<Cmd>lua require'telescope'.nvim_config()<CR>", "Open VimRC"},
+  --   g = {"<Cmd>lua require'telescope'.grep_prompt()<CR>", "Custom Grep"},
+  -- },
 
   g = {
     name = "Git",
