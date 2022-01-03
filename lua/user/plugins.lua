@@ -165,6 +165,8 @@ use {'ms-jpq/coq_nvim', branch = 'coq'}
 use {'ms-jpq/coq.artifacts',branch = 'artifacts'}
 use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
+use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+
 
 
 

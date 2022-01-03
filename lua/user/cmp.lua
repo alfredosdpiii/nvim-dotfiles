@@ -105,6 +105,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        cmp_tabnine = "[TN]",
       })[entry.source.name]
       return vim_item
     end,
@@ -119,6 +120,7 @@ cmp.setup {
     { name = "rg" },
     { name = 'treesitter' },
     { name = 'tags' },
+    { name = 'cmp_tabnine' },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
