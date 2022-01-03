@@ -192,7 +192,6 @@ use { 'neovim/nvim-lspconfig' }
   use { 'nvim-telescope/telescope.nvim'}
   use { 'nvim-telescope/telescope-fzy-native.nvim' }
   use { 'nvim-telescope/telescope-project.nvim' }
-  use { 'pwntester/octo.nvim'}
 
   --missing
   use { 'luukvbaal/stabilize.nvim'}
