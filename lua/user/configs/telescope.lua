@@ -91,6 +91,11 @@ telescope.setup {
     -- extension_name = {
     --   extension_config_key = value,
     -- }
+    -- require('telescope').load_extension('fzy_native')
+    require('telescope').load_extension('project'),
+    require('telescope').load_extension('neoclip'),
+    require("telescope").load_extension("notify"),
+
     -- please take a look at the readme of the extension you want to configure
   },
 }

@@ -110,13 +110,15 @@ cmp.setup {
     end,
   },
   sources = {
-    { name = "nvim_lsp" },
     { name = "luasnip" },
-    { name = "buffer" },
-    { name = "path" },
-    { name = "rg" },
+    { name = 'nvim_lsp' },
+    { name = 'vsnip' },
+    { name = 'buffer' },
+    { name = 'path' },
+    { name = 'calc' },
     { name = 'treesitter' },
     { name = 'tags' },
+    { name = 'rg' },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
@@ -130,3 +132,18 @@ cmp.setup {
     native_menu = false,
   },
 }
+-- Use buffer source for '/'
+cmp.setup.cmdline('/', {
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
+-- Use cmdline & path source for ':'
+cmp.setup.cmdline(':', {
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  })
+})
