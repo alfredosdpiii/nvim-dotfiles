@@ -90,7 +90,34 @@ telescope.setup {
     -- Your extension configuration goes here:
     -- extension_name = {
     --   extension_config_key = value,
+    require('telescope').load_extension('fzy_native'),
+require('telescope').load_extension('project'),
+require('telescope').load_extension('neoclip'),
+require("telescope").load_extension("notify"),
     -- }
     -- please take a look at the readme of the extension you want to configure
   },
 }
+local M = {}
+function M.grep_prompt()
+    require('telescope.builtin').grep_string{
+        shorten_path = true,
+        search = vim.fn.input("Rg> "),
+    }
+end
+
+function M.nvim_config()
+    require('telescope.builtin').file_browser{
+        prompt_title = "NVIM CONFIG",
+        shorten_path = false,
+        cwd = "~/.config/nvim/",
+        width = .25,
+
+        layout_strategy = 'horizontal',
+        layout_config = {
+            preview_width = 0.65,
+        },
+    }
+end
+
+return M
