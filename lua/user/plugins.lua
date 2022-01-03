@@ -159,6 +159,22 @@ end}
     use 'nvim-telescope/telescope-file-browser.nvim'
 --end of experimental plugs
 
+
+-- trying coq
+use {'ms-jpq/coq_nvim', branch = 'coq'}
+use {'ms-jpq/coq.artifacts',branch = 'artifacts'}
+use {'ms-jpq/coq.thirdparty', branch = '3p'}
+
+
+
+
+
+
+
+
+
+
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
