@@ -151,6 +151,10 @@ end}
 }
 
     use 'ludovicchabant/vim-gutentags'
+    use 'tpope/vim-bundler'
+    use 'tpope/vim-repeat'
+    use 'tpope/vim-dispatch'
+    use 'tpope/vim-dispatch'
 --end of experimental plugs
 
   -- Telescope

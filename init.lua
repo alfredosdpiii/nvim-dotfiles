@@ -1,4 +1,4 @@
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme gruvbox-material]])
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
