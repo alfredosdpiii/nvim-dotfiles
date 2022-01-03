@@ -96,7 +96,6 @@ end}
     use "vim-test/vim-test"
     use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
     use "preservim/tagbar"
-    
 
     use 'ggandor/lightspeed.nvim'
 
@@ -136,10 +135,8 @@ end}
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
-  use "lewis6991/gitsigns.nvim"
   use "tpope/vim-fugitive"
 
-use { 'neovim/nvim-lspconfig' }
   use { 'onsails/lspkind-nvim'}
   use { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }
 
@@ -243,7 +240,7 @@ use { 'neovim/nvim-lspconfig' }
   use { 'github/copilot.vim'}
 
   -- Tmux
-  use { 'christoomey/vim-tmux-navigator' }
+  -- use { 'christoomey/vim-tmux-navigator' }
 
   -- Colorschema
   use { 'sainnhe/gruvbox-material' }
