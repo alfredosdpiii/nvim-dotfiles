@@ -20,3 +20,10 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+require "user.colorizer"
+require "user.lightspeed"
+require "user.lspkind"
+require "user.nvim-notify"
+require "user.vim-gutentags"
+require('neoscroll').setup()
+require('neoclip').setup()

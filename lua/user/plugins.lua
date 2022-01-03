@@ -120,6 +120,38 @@ end}
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  --experimental plugs
+  use 'sainnhe/gruvbox-material'
+  use  'hrsh7th/cmp-vsnip'
+  use  'hrsh7th/vim-vsnip'
+  use  'hrsh7th/cmp-calc'
+  use  'quangnguyen30192/cmp-nvim-tags'
+  use  'AndrewRadev/tagalong.vim'
+  use  'andymass/vim-matchup'
+  use  'crivotz/nvim-colorizer.lua'
+  use  'onsails/lspkind-nvim'
+  use 'chentau/marks.nvim'
+  use 'karb94/neoscroll.nvim'
+  use {
+	"SmiteshP/nvim-gps",
+	requires = "nvim-treesitter/nvim-treesitter"
+}
+    use 'AckslD/nvim-neoclip.lua'
+    use 'rcarriga/nvim-notify'
+    use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+    require("todo-comments").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
+
+    use 'ludovicchabant/vim-gutentags'
+--end of experimental plugs
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

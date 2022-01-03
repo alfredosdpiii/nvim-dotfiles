@@ -112,8 +112,10 @@ cmp.setup {
   sources = {
     { name = "nvim_lsp" },
     { name = "luasnip" },
+    { name = "vsnip"},
     { name = "buffer" },
     { name = "path" },
+    { name = "calc"},
     { name = "rg" },
     { name = 'treesitter' },
     { name = 'tags' },
@@ -130,3 +132,16 @@ cmp.setup {
     native_menu = false,
   },
 }
+
+cmp.setup.cmdline('/', {
+    sources = {
+        { name = 'buffer'}
+    }
+})
+cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+        {name='path'}
+    }, {
+            {name='cmdline'}
+        })
+})
