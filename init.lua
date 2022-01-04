@@ -29,5 +29,5 @@ require "user.discord"
 require "user.tabnine"
 require "user.sad"
 require "user.navigator"
+require "user.neoclip"
 require('neoscroll').setup()
-require('neoclip').setup()
