@@ -1,4 +1,4 @@
-vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[colorscheme gruvbox-baby]])
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -25,7 +25,9 @@ require "user.lightspeed"
 require "user.lspkind"
 require "user.nvim-notify"
 require "user.vim-gutentags"
+require "user.discord"
 require "user.tabnine"
 require "user.sad"
+require "user.navigator"
 require('neoscroll').setup()
 require('neoclip').setup()

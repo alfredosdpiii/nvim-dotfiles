@@ -159,6 +159,8 @@ end}
     use 'nvim-telescope/telescope-file-browser.nvim'
     use 'ray-x/guihua.lua'
     use 'ray-x/sad.nvim'
+    use {'ray-x/navigator.lua', requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}}
+    use 'andweeb/presence.nvim'
 --end of experimental plugs
 
 
@@ -168,6 +170,9 @@ use {'ms-jpq/coq.artifacts',branch = 'artifacts'}
 use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
 use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+use 'SirVer/ultisnips'
+use 'honza/vim-snippets'
+use("quangnguyen30192/cmp-nvim-ultisnips")
 
 
 

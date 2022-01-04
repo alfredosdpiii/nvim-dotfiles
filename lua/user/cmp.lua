@@ -102,25 +102,32 @@ cmp.setup {
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
+        ultisnips = "[USnip]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
-        cmp_tabnine = "[TN]",
+        cmp_tabnine = "[Tab9]",
+        treesitter = "[TSit]",
+        tags = "[TAG]",
+        rg = "[RipG]",
+        vsnip = "[VSnips]",
+        calc = "[CALC]",
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
+    { name = 'cmp_tabnine' },
     { name = "nvim_lsp" },
+    { name = "ultisnips"},
     { name = "luasnip" },
     { name = "vsnip"},
     { name = "buffer" },
+    { name = 'treesitter' },
     { name = "path" },
     { name = "calc"},
-    { name = "rg" },
-    { name = 'treesitter' },
     { name = 'tags' },
-    { name = 'cmp_tabnine' },
+    { name = "rg" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,

@@ -16,7 +16,7 @@ local options = {
   splitbelow = true,                       -- force all horizontal splits to go below current window
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = false,                        -- creates a swapfile
-  -- termguicolors = true,                    -- set term gui colors (most terminals support this)
+  termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 100,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
   updatetime = 300,                        -- faster completion (4000ms default)
@@ -36,15 +36,15 @@ local options = {
 }
 
 vim.g.gruvbox_baby_function_style = "bold"
-vim.g.background_color = "dark"
+-- vim.g.background_color = "dark"
 vim.opt.shortmess:append "c"
--- vim.o.background="dark"
+vim.o.background="dark"
 vim.o.foldenable = false
 
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
-vim.cmd([[colorscheme gruvbox-baby]])
+-- vim.cmd([[colorscheme gruvbox-baby]])
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
