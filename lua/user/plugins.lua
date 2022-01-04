@@ -157,6 +157,8 @@ end}
     use 'nvim-telescope/telescope-fzy-native.nvim'
     use 'nvim-telescope/telescope-project.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
+    use 'ray-x/guihua.lua'
+    use 'ray-x/sad.nvim'
 --end of experimental plugs
 
 

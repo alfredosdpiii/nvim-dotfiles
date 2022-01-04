@@ -26,5 +26,6 @@ require "user.lspkind"
 require "user.nvim-notify"
 require "user.vim-gutentags"
 require "user.tabnine"
+require "user.sad"
 require('neoscroll').setup()
 require('neoclip').setup()
