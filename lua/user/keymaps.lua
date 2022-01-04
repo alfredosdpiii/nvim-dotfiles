@@ -87,7 +87,7 @@ keymap("n", "<leader>rg", ":lua require'telescope.builtin'.live_grep{}<CR>", opt
 --fugitive
 keymap("n", "<leader>gs", ":G<CR>", opts)
 --tree toggle
-keymap("n", "<C-t>", "<cmd>NvimTreeToggle<cr>", opts)
+keymap("n", "<C-e>", "<cmd>NvimTreeToggle<cr>", opts)
 
 keymap("n", "<leader>y", '"+y', opts)
 keymap("v", "<leader>y", '"+y', opts)
@@ -98,7 +98,7 @@ keymap("n", "Y", "y$", opts)
 
 --harpoon stuff
 keymap("n", "<leader>A", ':lua require("harpoon.ui").add_file()<CR>', opts)
-keymap("n", "<C-e>", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
+keymap("n", "<C-o>", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 
 --undotree
 keymap("n", "<F5>", ":UndoTreeToggle<CR>", opts)
