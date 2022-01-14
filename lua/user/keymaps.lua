@@ -97,7 +97,7 @@ keymap("n", "<leader>x", "_x", opts)
 keymap("n", "Y", "y$", opts)
 
 --harpoon stuff
-keymap("n", "<leader>A", ':lua require("harpoon.ui").add_file()<CR>', opts)
+keymap("n", "<leader>A", ':lua require("harpoon.mark").add_file()<CR>', opts)
 keymap("n", "<C-o>", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 
 --undotree
