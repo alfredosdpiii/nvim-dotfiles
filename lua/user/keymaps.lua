@@ -17,6 +17,7 @@ vim.g.maplocalleader = " "
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+keymap("i", "<C-c>", "<Esc>", opts)
 
 -- Normal --
 -- Better window navigation

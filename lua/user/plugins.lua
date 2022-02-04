@@ -170,8 +170,8 @@ use {'ms-jpq/coq.artifacts',branch = 'artifacts'}
 use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
 use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-use 'SirVer/ultisnips'
-use 'honza/vim-snippets'
+-- use 'SirVer/ultisnips'
+-- use 'honza/vim-snippets'
 use("quangnguyen30192/cmp-nvim-ultisnips")
 
 use {
